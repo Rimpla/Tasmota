@@ -222,8 +222,7 @@ const unsigned char TA0_RSA_E[] PROGMEM = {
 };
 
 const br_x509_trust_anchor TA0 PROGMEM = {
-        {
-                { (unsigned char *)TA0_DN, sizeof TA0_DN },
+        {  (unsigned char *)TA0_DN, sizeof TA0_DN },
                 BR_X509_TA_CA,
                 {
                         BR_KEYTYPE_RSA,
@@ -232,7 +231,6 @@ const br_x509_trust_anchor TA0 PROGMEM = {
                                 (unsigned char *)TA0_RSA_E, sizeof TA0_RSA_E,
                         } }
                 }
-        }
 };
 
 
